@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>QuickShop</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+	<header class="app-header">
+		<div class="brand">
+			<div class="logo">🛍️</div>
+			<h1>QuickShop</h1>
+		</div>
+		<div class="header-actions">
+			<input id="searchInput" class="search" type="search" placeholder="Search products..." />
+			<select id="categoryFilter" class="select">
+				<option value="">All Categories</option>
+				<option>Audio</option>
+				<option>Accessories</option>
+				<option>Adapters</option>
+				<option>Home</option>
+				<option>Cameras</option>
+			</select>
+			<select id="sortSelect" class="select">
+				<option value="">Sort</option>
+				<option value="price_asc">Price: Low to High</option>
+				<option value="price_desc">Price: High to Low</option>
+				<option value="name_asc">Name: A → Z</option>
+				<option value="name_desc">Name: Z → A</option>
+			</select>
+			<button id="manageToggle" class="btn">Manage</button>
+			<button id="cartToggle" class="btn btn-primary">Cart <span id="cartCount" class="badge">0</span></button>
+		</div>
+	</header>
+
+	<main class="container">
+		<section class="manage hidden" id="managePanel">
+			<form id="productForm" class="card" style="padding:16px;">
+				<h3 style="margin:0 0 10px;">Add / Edit Product</h3>
+				<div style="display:grid; grid-template-columns:1fr 1fr; gap:10px;">
+					<input id="fName" class="search" placeholder="Name" required />
+					<input id="fPrice" class="search" placeholder="Price" type="number" step="0.01" required />
+					<input id="fCategory" class="search" placeholder="Category" />
+					<input id="fImage" class="search" placeholder="Image URL" />
+				</div>
+				<textarea id="fDesc" class="search" placeholder="Description" style="height:80px; margin-top:10px;"></textarea>
+				<div style="display:flex; gap:10px; margin-top:10px;">
+					<button class="btn btn-accent" type="submit">Save</button>
+					<button class="btn" type="button" id="formReset">Clear</button>
+				</div>
+				<input type="hidden" id="fId" />
+			</form>
+		</section>
+		<section class="products" id="productsGrid"></section>
+	</main>
+
+	<aside id="cartPanel" class="cart-panel hidden" aria-hidden="true">
+		<div class="cart-header">
+			<h2>Your Cart</h2>
+			<button id="closeCart" class="icon-btn" aria-label="Close">✖</button>
+		</div>
+		<ul id="cartItems" class="cart-items"></ul>
+		<div class="cart-footer">
+			<div class="total">Total: <span id="cartTotal">$0.00</span></div>
+			<button id="checkoutBtn" class="btn btn-accent" disabled>Checkout (demo)</button>
+		</div>
+	</aside>
+
+	<template id="productCardTpl">
+		<div class="card">
+			<img class="thumb" alt="" />
+			<div class="card-body">
+				<h3 class="title"></h3>
+				<p class="desc"></p>
+				<div class="meta">
+					<span class="price"></span>
+					<div class="qty">
+						<button class="qty-dec">-</button>
+						<input class="qty-input" type="number" value="1" min="1" />
+						<button class="qty-inc">+</button>
+					</div>
+				</div>
+				<button class="btn btn-primary add-btn">Add to Cart</button>
+			</div>
+		</div>
+	</template>
+
+	<script src="app.js"></script>
+</body>
+</html>
+
+

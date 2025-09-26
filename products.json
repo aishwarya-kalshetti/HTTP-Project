@@ -1,0 +1,66 @@
+[
+	{
+		"id": 1,
+		"name": "Aurora Wireless Headphones",
+		"price": 79.99,
+		"category": "Audio",
+		"image": "https://tse3.mm.bing.net/th/id/OIP.WS3d78TTL7c54q5yH2WxWQHaJ4?pid=Api&P=0&h=180",
+		"description": "Immersive over-ear headphones with 40mm drivers and 30h battery."
+	},
+	{
+		"id": 2,
+		"name": "Apple MacBook Air (M2)",
+		"price": 999,
+		"category": "Accessories",
+		"image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=800&auto=format&fit=crop",
+		"description": "13.6″ Liquid Retina display, 8GB–24GB RAM, 256GB–2TB SSD, M2 chip, ultra-thin fanless design"
+	},
+	{
+		"id": 3,
+		"name": "USB-C Hub",
+		"price": 50,
+		"category": "Audio",
+		"image": "https://m.media-amazon.com/images/I/61i6Uicea+L._AC_SL1500_.jpg",
+		"description": "video output (4K/HDMI or DisplayPort), and data transfer at USB 3.x speeds."
+	},
+	{
+		"id": 4,
+		"name": "Solstice Smart Lamp",
+		"price": 59,
+		"category": "Home",
+		"image": "https://tse3.mm.bing.net/th/id/OIP.tMd-rlKH81UcaUPOMXwU3gHaHa?pid=Api&P=0&h=180",
+		"description": "Warm-to-cool ambient lamp with touch dimmer and scene presets."
+	},
+	{
+		"id": 5,
+		"name": "Pixelwave Action Camera",
+		"price": 139.99,
+		"category": "Cameras",
+		"image": "https://images.unsplash.com/photo-1452587925148-ce544e77e70d?q=80&w=800&auto=format&fit=crop",
+		"description": "4K60 action cam with EIS 2.0 and waterproof housing."
+	},
+	{
+		"id": 6,
+		"name": "Adapter",
+		"price": 30,
+		"category": "Adapters",
+		"image": "https://i5.walmartimages.com/asr/c17a9b91-405f-46d9-a5c0-94f549c3f959_1.029af43460ae215bfd057076078e6621.jpeg",
+		"description": "Pro-Range 9V 2A Power Adapter with 5.5 X 2.5mm DC Plug"
+	},
+	{
+		"id": 7,
+		"name": "Macbook Pro",
+		"price": 1599,
+		"category": "Accessories",
+		"image": "https://tse3.mm.bing.net/th/id/OIP.LPI1h8BOVhlWn5zrQbPS3gHaEq?pid=Api&P=0&h=180",
+		"description": "512GB–8TB SSD, 16GB–128GB RAM, M3/M3 Pro/M3 Max chip, 14″/16″ Liquid Retina XDR display"
+	},
+	{
+		"id": 8,
+		"name": "LG WashTower FWT1310PB Front Load Washer‑",
+		"price": 500,
+		"category": "Home",
+		"image": "https://rukminim1.flixcart.com/image/1664/1664/washing-machine-new/z/z/g/ifb-elite-aqua-sx-7-kg-original-imae4rxxcya6fspy.jpeg?q=90",
+		"description": "6–12 kg capacity, front-load or top-load, semi/fully automatic, 700–1400 RPM spin speed, 3–5 star energy rating, with multiple wash programs"
+	}
+]
