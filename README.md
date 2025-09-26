@@ -1,6 +1,10 @@
-# QuickShop - E‑Commerce Cart API Demo
+# QuickShop 
 
 Single-page app with a Node.js + Express backend and session-based cart.
+
+## Demo
+
+
 
 ## Features
 - Products API with filters, sorting, and search
