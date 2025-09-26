@@ -1,6 +1,6 @@
 # QuickShop 
 
-Single-page app with a Node.js + Express backend and session-based cart.
+Single-page app with a Node.js + HTTP methods + dynamic cart.
 
 ## Demo
 
@@ -9,9 +9,9 @@ Single-page app with a Node.js + Express backend and session-based cart.
 ## Features
 - Products API with filters, sorting, and search
 - Cart CRUD: add, update quantity (including 0 to remove), delete, list with totals
-- Session-scoped cart via cookies
+- Dynamic Cart(Total amount calculation)
 - Required API version header `X-API-Version: 1.0`
-- SPA with attractive dark UI
+
 
 ## all require header
 - GET `/api/products` — query: `search`, `category`, `minPrice`, `maxPrice`, `sort`
@@ -26,7 +26,3 @@ Single-page app with a Node.js + Express backend and session-based cart.
 npm install
 npm start
 # open http://localhost:3000
-```
-
-
-
